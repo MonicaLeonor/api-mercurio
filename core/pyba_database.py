@@ -7,16 +7,17 @@ class PybaDatabase:
         self.port = 3306
         self.user = "b9bb3cff9129ed"
         self.password = "04ef2d73"
-        self.database = "heroku_2756c753b976189"     
+        self.database = "heroku_2756c753b976189" 
+        self.connection = self.createConnection()
+        self.cursor = self.createCursor()   
 
         """self.host = "localhost"
         self.port = 3306
         self.user = "root"
         self.password = "root"
-        self.database = "testdb"   """ 
+        self.database = "api_otroequipobd"  """
 
-        self.connection = self.createConnection()
-        self.cursor = self.createCursor()
+    
 
     def createConnection(self):
         con = pymysql.connect(
