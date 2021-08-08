@@ -1,0 +1,2 @@
+Confg vars:
+mysql://b9bb3cff9129ed:04ef2d73@us-cdbr-east-04.cleardb.com/heroku_2756c753b976189?reconnect=true
