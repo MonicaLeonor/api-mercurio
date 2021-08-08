@@ -8,7 +8,7 @@ class EndPointsLogic(PybaLogic):
     # Parámetro get
     def getAll(self, endpoint):
         database = self.createDatabaseObj()
-        sql = f"SELECT * FROM api_otroequipobd.{endpoint};"
+        sql = f"SELECT * FROM heroku_2756c753b976189.{endpoint};"
         result = database.executeQuery(sql)
         if len(result) != 0:
             return result
